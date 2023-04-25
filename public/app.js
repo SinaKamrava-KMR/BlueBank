@@ -30,3 +30,25 @@ function boundSlides() {
     cards.style.left = `-${cardsRect.width - containerRect.width}px`;
   }
 } 
+
+
+
+const accordions = document.getElementById("accordions");
+
+
+accordions.addEventListener("click", (event) => {
+  
+  if (!event.target.dataset.question) return;
+
+
+  const contentNode = event.target.nextElementSibling;
+  contentNode.classList.toggle("hidden");
+
+  event.target.classList.toggle("text-blue-600");
+
+
+
+
+
+
+})
